@@ -1,14 +1,8 @@
 package com.formacionvfarias.microservicio.app.usuario.services;
 
-import java.util.Optional;
-
+import com.formacionvfarias.microservicio.app.commons.services.CommonService;
 import com.formacionvfarias.microservicio.app.usuario.entity.Alumno;
 
-public interface AlumnoService {
+public interface AlumnoService extends CommonService<Alumno>{
 	
-	public Iterable<Alumno> findAll();
-	public Optional<Alumno> findById(Long id);
-	public Alumno save(Alumno alumno);
-	public void deleteById(Long id);
-
 }
